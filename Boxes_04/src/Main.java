@@ -9,6 +9,7 @@ public class Main {
         int containers = 0;
         int boxes;
         int containersCount = 0;
+        int boxNumbers = 0;
 
         while (boxCount > 0) {
             trucks++;
@@ -20,7 +21,8 @@ public class Main {
                 containersCount++;
                 System.out.println("Контейнер " + containers + ":");
                 for (boxes = 1; boxes <= 27 & boxCount > 0; boxes++) {
-                    System.out.println("\tЯщик " + boxes);
+                    boxNumbers++;
+                    System.out.println("\tЯщик " + boxNumbers);
                     boxCount--;
                 }
             }
